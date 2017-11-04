@@ -1,7 +1,7 @@
 # Intellij Pywal Scheme Generator
 The scripts in this repository can generate Intellij themes based on
-[Pywal]()'s or other color scheme generator tools automatically. It is meant to
-be used in combination with [Material Theme Plugin]() to integrate with every
+[Pywal](https://github.com/dylanaraps/pywal)'s or other color scheme generator tools automatically. It is meant to
+be used in combination with [Material Theme Plugin](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) to integrate with every
 element of Intellij's UI instead of just creating the editor's color scheme.
 
 ## Dependencies
@@ -14,8 +14,8 @@ element of Intellij's UI instead of just creating the editor's color scheme.
 backup your custom material theme configuration if you care for it.
 
 1. Clone or download the files on this repository
-2. Modify `intellijPywalGen.sh` to make `$ijCfPath` point to your [config
-directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)/colors
+2. Modify `intellijPywalGen.sh` to make `$ijCfPath` point to your `[config
+directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)/colors`
 (eg.: `~/.IntelliJIdea2017.2/config/colors/material_pywal.icls`) and
 `$ijCfPath` to point to your `config/options` directory (eg.: `~/.IntelliJIdea2017.2/config/options/material_custom_theme.xml`)
 3. Run `intellijPywalGen.sh`
@@ -32,4 +32,7 @@ After the first time you'll only need to restart Intellij after you run the scri
 take effect.
 
 ## i3wm Integration
+[TODO]
 
+## Screenshots
+[TODO]
