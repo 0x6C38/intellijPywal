@@ -59,12 +59,10 @@ if [[ $11 -eq 0 ]] ; then
     treeColor=${c[15]}
 fi
 
-#ijCfPath=/media/MD/Development/Projects/Bash/Cool.icls
-#templatePath=/media/MD/Development/Projects/Bash/most-self-important-name-ever.xml
 templatePath=/media/MD/Development/Projects/Bash/intellijPywal/material_scheme_template.xml
 materialTPath=/media/MD/Development/Projects/Bash/intellijPywal/material_template.xml
-# alias
-ijCfPath=~/.IntelliJIdea2017.2/config/colors/material_scheme_template.icls
+
+ijCfPath=~/.IntelliJIdea2017.2/config/colors/material_pywal.icls # Point to your path
 ijMPath=~/.IntelliJIdea2017.2/config/options/material_custom_theme.xml
 
 # echo $bgColor\ $txtColor\ $caretRowColor >> $actLog
@@ -72,13 +70,11 @@ ijMPath=~/.IntelliJIdea2017.2/config/options/material_custom_theme.xml
 cp -f $templatePath $ijCfPath
 cp -f $materialTPath $ijMPath
 
-#exp=s/\{background\}/$txtColor/g
 exp=s/leTXT/$txtColor/g
 sed -i $exp $ijCfPath
 sed -i $exp $ijMPath
 
 exp=s/leBG/$bgColor/g
-#exp=s/\{text\}/$bgColor/g
 sed -i $exp $ijCfPath
 sed -i $exp $ijMPath
 
