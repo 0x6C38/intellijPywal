@@ -1,0 +1,16 @@
+<application>
+  <component name="MaterialCustomThemeConfig">
+    <option name="treeSelectionColor" value="leTree" />
+    <option name="highlightColor" value="leSBG" />
+    <option name="secondBorderColor" value="leSBC" />
+    <option name="contrastColor" value="leContrast" />
+    <option name="secondaryBackgroundColor" value="leBG2" />
+    <option name="caretColor" value="ffffff" />
+    <option name="inactiveColor" value="000000" />
+    <option name="selectionForegroundColor" value="leSFG" />
+    <option name="selectionBackgroundColor" value="leSBG" />
+    <option name="textColor" value="leTXT" />
+    <option name="foregroundColor" value="leFG" />
+    <option name="backgroundColor" value="leBG" />
+  </component>
+</application>
