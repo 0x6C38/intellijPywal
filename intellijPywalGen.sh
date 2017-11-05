@@ -93,11 +93,8 @@ materialTPath=$DIR\/material_template.xml
 
 
 # ijConfigPath=~/.IntelliJIdea2017.2/config
-#ijCfPath=~/.IntelliJIdea2017.2/config/colors/material-pywal.icls # Point to your path
-#ijMPath=~/.IntelliJIdea2017.2/config/options/material_custom_theme.xml # Point to your path
-
-ijCfPath=$ijConfigPath/colors/material-pywal.icls # Point to your path
-ijMPath=$ijConfigPath/options/material_custom_theme.xml # Point to your path
+ijCfPath=$ijConfigPath/colors/material-pywal.icls
+ijMPath=$ijConfigPath/options/material_custom_theme.xml
 #echo $ijCfPath
 #echo $ijMPath
 
