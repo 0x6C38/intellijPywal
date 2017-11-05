@@ -1,4 +1,4 @@
-#Intellij Pywal Scheme Generator
+# Intellij Pywal Scheme Generator
 The scripts in this repository can generate Intellij themes based on
 [Pywal](https://github.com/dylanaraps/pywal) or other color scheme generator tools automatically. It is meant to
 be used in combination with [Material Theme Plugin](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) to integrate with every
