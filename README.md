@@ -34,8 +34,8 @@ command. For example:
 
     bindsym $mod+Print exec "wal -i $HOME/Pictures/Wallpapers;/pathToScript/intellijPywalGen.sh  $HOME/.IntelliJIdea2017.2/config"
 
-Notice how both commands are separated by a semicolon without any space in-between
-and how the params are passed with an unscaped space.
+Notice both commands are separated by a semicolon without any space in-between
+and the params are passed with an unescaped space.
 
 ## Screenshots
 ![demo](screenshots/sample.gif)
