@@ -1,5 +1,5 @@
 # Pywal Intellij Material Theme and Scheme Generator
-The scripts in this repository can generate Intellij themes based on
+The script in this repository can generate Intellij themes based on
 [Pywal](https://github.com/dylanaraps/pywal) or other color scheme generator tools automatically. It is meant to
 be used in combination with [Material Theme Plugin](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) to integrate with every
 element of Intellij's UI instead of just the editor's color scheme.
@@ -29,7 +29,7 @@ take effect.
 
 ## i3wm Integration
 Integration with `i3` is very simple. A good way to go about it is to bind
-a shortcut to set the wallpaper using pywal and then chain a call to this script on the same
+a shortcut to set a random wallpaper using pywal and then chain a call to this script on the same
 command to make sure pywal has updated the colors:
 
     bindsym $mod+Print exec "wal -i $HOME/Pictures/Wallpapers;/pathToScript/intellijPywalGen.sh  $HOME/.IntelliJIdea2017.2/config"
