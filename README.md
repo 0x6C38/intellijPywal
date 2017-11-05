@@ -40,4 +40,4 @@ command. For example:
 
 
 ## Screenshots
-[TODO]
+![demo](screenshots/sample.gif)
