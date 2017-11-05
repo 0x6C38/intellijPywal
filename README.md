@@ -29,8 +29,8 @@ take effect.
 
 ## i3wm Integration
 Integration with `i3` is very simple. A good way to go about it is to bind
-a shortcut to change the wallpaper using wal and call this script on the same
-command. For example:
+a shortcut to set the wallpaper using pywal and then chain a call to this script on the same
+command to make sure pywal has updated the colors:
 
     bindsym $mod+Print exec "wal -i $HOME/Pictures/Wallpapers;/pathToScript/intellijPywalGen.sh  $HOME/.IntelliJIdea2017.2/config"
 
