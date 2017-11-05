@@ -59,11 +59,20 @@ if [[ $11 -eq 0 ]] ; then
     treeColor=${c[15]}
 fi
 
-templatePath=/media/MD/Development/Projects/Bash/intellijPywal/material_scheme_template.xml
-materialTPath=/media/MD/Development/Projects/Bash/intellijPywal/material_template.xml
+# Get current Directory
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-ijCfPath=~/.IntelliJIdea2017.2/config/colors/material_pywal.icls # Point to your path
-ijMPath=~/.IntelliJIdea2017.2/config/options/material_custom_theme.xml
+templatePath=$DIR\/material_scheme_template.xml
+materialTPath=$DIR\/material_template.xml
+
+ijCfPath=~/.IntelliJIdea2017.2/config/colors/material-pywal.icls # Point to your path
+ijMPath=~/.IntelliJIdea2017.2/config/options/material_custom_theme.xml # Point to your path
 
 # echo $bgColor\ $txtColor\ $caretRowColor >> $actLog
 
