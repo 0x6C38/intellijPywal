@@ -2,9 +2,6 @@
 # value=\"(\K[a-f0-9]{6})
 # (?sm)(^[^\r\n]+$)(?!.*^\1$)
 
-# now=$(date +"%T")
-# actLog=/media/MD/Development/Projects/Bash/intellijPywal/activity.log
-# echo "script was run at $now" >> $actLog
 
 # Attempts to retrieve wals colors
 cache_dir="${HOME}/.cache/wal"
@@ -13,6 +10,12 @@ c=($(< "${cache_dir}/colors"))
 c=("${c[@]//\#}")
 
 ijConfigPath=$1
+
+#now=$(date +"%T")
+#actLog=/media/MD/Development/Projects/Bash/intellijPywal/activity.log
+#echo "script was run at $now and path is $ijConfigPath" >> $actLog
+#
+
 #txtColor=$2
 #bgColor=$3
 #sbgColor=$4

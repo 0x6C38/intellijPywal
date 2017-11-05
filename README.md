@@ -10,7 +10,7 @@ element of Intellij's UI instead of just the editor's color scheme.
 
 ## Instalation
 
-   >**Warning**: this script overrides `material_custom_theme.xml` so make sure to backup your custom material theme configuration if you care for it.
+   >**Warning**: this script overrides `material_custom_theme.xml` so be sure to backup your custom material theme configuration if you care for it.
 
 1. Clone or download the files on this repository
 2. Run `intellijPywalGen.sh` and make sure to pass the path to your [config
@@ -32,8 +32,10 @@ Integration with `i3` is very simple. A good way to go about it is to bind
 a shortcut to change the wallpaper using wal and call this script on the same
 command. For example:
 
-    bindsym $mod+Print exec "wal -i $HOME/Pictures/Wallpapers; /pathToScript/intellijPywalGen.sh\ $HOME/.IntelliJIdea2017.2/config"
+    bindsym $mod+Print exec "wal -i $HOME/Pictures/Wallpapers;/pathToScript/intellijPywalGen.sh  $HOME/.IntelliJIdea2017.2/config"
 
+Notice how both commands are separated by a semicolon without any space in-between
+and how the params are passed with an unscaped space.
 
 ## Screenshots
 ![demo](screenshots/sample.gif)
