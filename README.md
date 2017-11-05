@@ -10,8 +10,7 @@ element of Intellij's UI instead of just creating the editor's color scheme.
 
 ## Instalation
 
-    **Warning**: this script overrides `material_custom_theme.xml` so make sure to
-backup your custom material theme configuration if you care for it.
+    **Warning**: this script overrides `material_custom_theme.xml` so make sure to backup your custom material theme configuration if you care for it.
 
 1. Clone or download the files on this repository
 2. Modify `intellijPywalGen.sh` to make `$ijCfPath` point to your [config
