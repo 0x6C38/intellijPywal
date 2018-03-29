@@ -14,7 +14,7 @@ element of Intellij's UI instead of just the editor's color scheme.
 
 1. Clone or download the files in this repository
 2. Run `intellijPywalGen.sh` and make sure to pass the path to your [config
-directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) (eg.: `./intellijPywalGen.sh $HOME/.IntelliJIdea2017.2/config`)
+directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) (eg.: `./intellijPywalGen.sh $HOME/.IntelliJIdea2018.1/config`)
 3. Set material theme to "custom theme" `(Intellij -> Tools -> Material Theme ->
    Material Theme Chooser -> Custom Theme)`
 4. Import `material-pywal.icls` editor scheme which should be located in your
@@ -32,7 +32,7 @@ Integration with `i3` is very simple. A good way to go about it is to bind
 a shortcut to set a random wallpaper using pywal and then chain a call to this script on the same
 command to make sure pywal has updated the colors:
 
-    bindsym $mod+Print exec "wal -i $HOME/Pictures/Wallpapers;/pathToScript/intellijPywalGen.sh  $HOME/.IntelliJIdea2017.2/config"
+    bindsym $mod+Print exec "wal -i $HOME/Pictures/Wallpapers;/pathToScript/intellijPywalGen.sh  $HOME/.IntelliJIdea2018.1/config"
 
 Notice both commands are separated by a semicolon without any space in-between
 and the params are passed with an unescaped space.
