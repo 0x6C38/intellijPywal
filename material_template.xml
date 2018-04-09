@@ -12,5 +12,7 @@
     <option name="textColor" value="leTXT" />
     <option name="foregroundColor" value="leFG" />
     <option name="backgroundColor" value="leBG" />
+    <option name="buttonColor" value="leActive" />
+    <option name="disabledColor" value="leDisabled" />
   </component>
 </application>
