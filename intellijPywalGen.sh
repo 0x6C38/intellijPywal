@@ -30,8 +30,8 @@ ijConfigPath=$1
 
 txtColor=${c[15]}
 bgColor=${c[0]}
-sbgColor=${c[0]}
-sfgColor=${c[15]}
+sbgColor=${c[1]}
+sfgColor=${c[0]}
 caretRowColor=${sbgColor}
 lnColor=${c[1]}
 fgColor=${c[15]}
@@ -39,6 +39,8 @@ bg2Color=${c[1]}
 contrastColor=${c[1]}
 sbColor=${c[1]}
 treeColor=${c[15]}
+disabledColor=${c[15]}
+activeColor=${c[2]}
 
 #if [[ $1 -eq 0 ]] ; then
 #    ijConfigPath=$HOME/.IntelliJIdea2017.2/config
@@ -145,5 +147,13 @@ sed -i $exp $ijCfPath
 sed -i $exp $ijMPath
 
 exp=s/leTree/$treeColor/g
+sed -i $exp $ijCfPath
+sed -i $exp $ijMPath
+
+exp=s/leDisabled/$disabledColor/g
+sed -i $exp $ijCfPath
+sed -i $exp $ijMPath
+
+exp=s/leActive/$activeColor/g
 sed -i $exp $ijCfPath
 sed -i $exp $ijMPath
