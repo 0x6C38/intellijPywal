@@ -9,25 +9,10 @@ cache_dir="${HOME}/.cache/wal"
 c=($(< "${cache_dir}/colors"))
 c=("${c[@]//\#}")
 
+# Read input param
 ijConfigPath=$1
 
-#now=$(date +"%T")
-#actLog=/media/MD/Development/Projects/Bash/intellijPywal/activity.log
-#echo "script was run at $now and path is $ijConfigPath" >> $actLog
-#
-
-#txtColor=$2
-#bgColor=$3
-#sbgColor=$4
-#sfgColor=$5
-#caretRowColor=$6
-#lnColor=$7
-#fgColor=$8
-#bg2Color=$9
-#contrastColor=${10}
-#sbColor=${11}
-#treeColor=${12}
-
+# Set colors based on pywal
 txtColor=${c[15]}
 bgColor=${c[0]}
 sbgColor=${c[1]}
@@ -42,45 +27,6 @@ treeColor=${c[15]}
 disabledColor=${c[15]}
 activeColor=${c[2]}
 
-#if [[ $1 -eq 0 ]] ; then
-#    ijConfigPath=$HOME/.IntelliJIdea2017.2/config
-#fi
-
-#
-#if [[ $2 -eq 0 ]] ; then
-#    txtColor=${c[15]}
-#fi
-#if [[ $3 -eq 0 ]] ; then
-#    bgColor=${c[0]}
-#fi
-#if [[ $4 -eq 0 ]] ; then
-#    sbgColor=${c[0]}
-#fi
-#if [[ $5 -eq 0 ]] ; then
-#    sfgColor=${c[15]}
-#fi
-#if [[ $6 -eq 0 ]] ; then
-#    caretRowColor=${sbgColor}
-#fi
-#if [[ $7 -eq 0 ]] ; then
-#    lnColor=${c[1]}
-#fi
-#if [[ $8 -eq 0 ]] ; then
-#    fgColor=${c[15]}
-#fi
-#if [[ $9 -eq 0 ]] ; then
-#    bg2Color=${c[1]}
-#fi
-#if [[ $10 -eq 0 ]] ; then
-#    contrastColor=${c[1]}
-#fi
-#if [[ $11 -eq 0 ]] ; then
-#    sbColor=${c[1]}
-#fi
-#if [[ $12 -eq 0 ]] ; then
-#    treeColor=${c[15]}
-#fi
-
 # Get current Directory
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
@@ -90,21 +36,19 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
+# Paths to templates
 templatePath=$DIR\/material_scheme_template.xml
 materialTPath=$DIR\/material_template.xml
 
-
-# ijConfigPath=~/.IntelliJIdea2017.2/config
+# Paths to IDE
 ijCfPath=$ijConfigPath/colors/material-pywal.icls
 ijMPath=$ijConfigPath/options/material_custom_theme.xml
-#echo $ijCfPath
-#echo $ijMPath
 
-# echo $bgColor\ $txtColor\ $caretRowColor >> $actLog
-
+# Override existing config
 cp -f $templatePath $ijCfPath
 cp -f $materialTPath $ijMPath
 
+# Replace placeholders for colors
 exp=s/leTXT/$txtColor/g
 sed -i $exp $ijCfPath
 sed -i $exp $ijMPath
