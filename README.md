@@ -27,6 +27,17 @@ directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Di
 After the first time you'll only need to restart Intellij after you run the script in order for changes to
 take effect.
 
+#### Mac
+
+If you use `intellijPywalGen.sh`, you will [get error about sed](https://stackoverflow.com/questions/4247068/sed-command-with-i-option-failing-on-mac-but-works-on-linux).
+Therefore, you can use `intellijPywalGenmac.sh` instead.
+
+The following is an example code, when CLion2020.1 in mac.
+
+```
+./intellijPywalGenmac.sh $HOME/Library/ApplicationSupport/JetBrains/CLion2020.1
+```
+
 ## i3wm Integration
 Integration with `i3` is very simple. A good way to go about it is to bind
 a shortcut to set a random wallpaper using pywal and then chain a call to this script on the same
