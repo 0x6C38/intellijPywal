@@ -8,7 +8,7 @@ element of Intellij's UI instead of just the editor's color scheme.
 - Intellij (or some other Jetbrains IDE) + Material Theme Plugin
 - Pywal
 
-## Instalation
+## Installation
 
    >**Warning**: this script overrides `material_custom_theme.xml` so be sure to backup your custom material theme configuration if you care for it.
 
